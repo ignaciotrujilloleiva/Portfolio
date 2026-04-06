@@ -75,3 +75,49 @@ body {
 }
 
 .hover-accent:hover { color: var(--accent) !important; }
+
+/* Estilos para Dropdown */
+.dropdown-menu {
+    background-color: var(--bg-darker);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: 12px;
+}
+
+.dropdown-item {
+    color: var(--text-light);
+    transition: all 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: var(--accent);
+    color: white;
+}
+
+/* Badge de proyecto personalizado */
+.badge.bg-dark {
+    background-color: rgba(30, 41, 59, 0.8) !important;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--text-muted);
+}
+
+/* Modulo 8 */
+
+.study-title {
+            padding: 120px 0 60px;
+            background: linear-gradient(180deg, var(--bg-darker) 0%, var(--bg-main) 100%);
+        }
+
+        .tech-tag {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .case-card {
+            background: var(--bg-darker);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }

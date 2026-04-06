@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desarrollador Web | Portafolio Profesional</title>
-    <meta name="description" content="Portafolio de Desarrollador Web Full Stack enfocado en soluciones modernas y escalables.">
-    
+    <title>Ignacio Trujillo | Desarrollador Web Full Stack</title>
+    <meta name="description"
+        content="Portafolio profesional de Ignacio Trujillo, desarrollador Full Stack especializado en Python y Django.">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg fixed-top shadow-sm" id="mainNav">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">DEV<span>.PORTFOLIO</span></a>
+            <a class="navbar-brand fw-bold" href="#inicio">IGNACIO<span>.DEV</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,28 +30,49 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Proyectos
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark shadow">
+                            <li><a class="dropdown-item"
+                                    href="https://github.com/ignaciotrujilloleiva/Proyecto-Modulo-2-Alke-Wallet"
+                                    target="_blank">Alke Wallet</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://github.com/ignaciotrujilloleiva/Proyecto-Modulo-4-Gestor-Inteligente-de-clientes-GIC"
+                                    target="_blank">Gestor GIC</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://github.com/ignaciotrujilloleiva/Proyecto-Modulo-7-Desarrollo-web-Django-Integraci-n-Base-de-datos"
+                                    target="_blank">Django Integración DB</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="modulo8.html">Tareas Módulo 8</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <header id="inicio" class="hero-section d-flex align-items-center">
-        <div class="container text-center text-md-start">
+        <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-7" data-aos="fade-right">
-                    <h1 class="display-3 fw-bold">Hola, soy <span class="text-accent">Ignacio</span></h1>
+                <div class="col-md-7 text-center text-md-start" data-aos="fade-right">
+                    <h1 class="display-3 fw-bold mb-2">Hola, soy <span class="text-accent">Ignacio Trujillo</span></h1>
                     <h2 class="h3 mb-4 text-secondary">Desarrollador Web Full Stack</h2>
-                    <p class="lead mb-5">Construyo aplicaciones web robustas con Django, Python y tecnologías modernas de frontend. Enfocado en código limpio y experiencias de usuario excepcionales.</p>
+                    <p class="lead mb-5 text-muted">Especializado en crear soluciones robustas con <strong>Django y
+                            Python</strong>. Estudiante de Fullstack apasionado por la arquitectura limpia y la
+                        eficiencia.</p>
                     <div class="d-flex gap-3 justify-content-center justify-content-md-start">
                         <a href="#proyectos" class="btn btn-primary btn-lg px-4">Ver proyectos</a>
                         <a href="#contacto" class="btn btn-outline-light btn-lg px-4">Contacto</a>
                     </div>
                 </div>
                 <div class="col-md-5 d-none d-md-block" data-aos="zoom-in">
-                    <div class="hero-shape"></div>
+                    <div class="hero-visual">
+                        <i class="bi bi-code-slash display-1 text-accent opacity-25"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -56,23 +83,29 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6" data-aos="fade-up">
                     <h2 class="section-title">Sobre mí</h2>
-                    <p>Soy un apasionado del desarrollo de software con un enfoque especial en el ecosistema <strong>Python</strong>. Mi objetivo es transformar ideas complejas en soluciones digitales sencillas y funcionales.</p>
-                    <p>Me especializo en el desarrollo de arquitecturas MVT y REST APIs, siempre cuidando que el frontend sea intuitivo y responsive.</p>
+                    <p>Soy un desarrollador en formación constante, cursando actualmente un Bootcamp de Fullstack
+                        Python. Mi enfoque se centra en el desarrollo de aplicaciones escalables utilizando el patrón
+                        <strong>MVT de Django</strong>.
+                    </p>
+                    <p>Me apasiona resolver problemas lógicos en el backend sin descuidar una interfaz de usuario
+                        moderna y funcional utilizando <strong>Bootstrap 5</strong>.</p>
                 </div>
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="about-card p-4">
-                        <div class="d-flex mb-3">
-                            <i class="bi bi-code-square me-3 text-accent h4"></i>
+                        <div class="d-flex mb-4">
+                            <i class="bi bi-terminal-fill me-3 text-accent h4"></i>
                             <div>
-                                <h5>Enfoque Full Stack</h5>
-                                <p class="small text-secondary m-0">Dominio de lógica de servidor y diseño de interfaces.</p>
+                                <h5>Desarrollo Backend</h5>
+                                <p class="small text-secondary m-0">Creación de lógica de negocio, manejo de ORM y bases
+                                    de datos SQL.</p>
                             </div>
                         </div>
                         <div class="d-flex">
-                            <i class="bi bi-rocket-takeoff me-3 text-accent h4"></i>
+                            <i class="bi bi-layers-half me-3 text-accent h4"></i>
                             <div>
-                                <h5>Optimización</h5>
-                                <p class="small text-secondary m-0">Sitios rápidos, seguros y listos para producción.</p>
+                                <h5>Arquitectura Web</h5>
+                                <p class="small text-secondary m-0">Integración de componentes frontend dinámicos y
+                                    responsivos.</p>
                             </div>
                         </div>
                     </div>
@@ -87,23 +120,23 @@
             <div class="row g-4 mt-4">
                 <div class="col-md-4" data-aos="fade-up">
                     <div class="skill-card p-4">
-                        <i class="bi bi-window-sidebar h1 text-accent"></i>
+                        <i class="bi bi-palette h1 text-accent"></i>
                         <h4 class="mt-3">Frontend</h4>
-                        <p>HTML5, CSS3, JavaScript, Bootstrap 5</p>
+                        <p class="text-secondary">HTML5, CSS3, JavaScript, Bootstrap 5</p>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="skill-card p-4">
-                        <i class="bi bi-database-fill-gear h1 text-accent"></i>
+                        <i class="bi bi-braces-asterisk h1 text-accent"></i>
                         <h4 class="mt-3">Backend</h4>
-                        <p>Python, Django, PostgreSQL, SQL</p>
+                        <p class="text-secondary">Python, Django, PostgreSQL, SQLite</p>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="skill-card p-4">
-                        <i class="bi bi-tools h1 text-accent"></i>
+                        <i class="bi bi-git h1 text-accent"></i>
                         <h4 class="mt-3">Herramientas</h4>
-                        <p>Git, GitHub, VS Code, Microsoft Word</p>
+                        <p class="text-secondary">Git, GitHub, VS Code, Microsoft Word</p>
                     </div>
                 </div>
             </div>
@@ -114,62 +147,141 @@
         <div class="container">
             <h2 class="section-title mb-5" data-aos="fade-right">Proyectos Destacados</h2>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4" data-aos="flip-left">
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="project-card">
-                        <div class="project-img bg-secondary" style="height: 200px;"></div>
                         <div class="p-4">
-                            <h5>Alke Web Base</h5>
-                            <p class="small text-secondary">Gestión de productos y panel administrativo con Django MVT.</p>
+                            <i class="bi bi-wallet2 text-accent h1"></i>
+                            <h5 class="mt-3">Alke Wallet</h5>
+                            <p class="small text-secondary">Proyecto Módulo 2: Aplicación financiera para gestión de
+                                activos y transacciones.</p>
                             <div class="mb-3">
-                                <span class="badge bg-dark">Django</span>
-                                <span class="badge bg-dark">Python</span>
-                                <span class="badge bg-dark">Bootstrap</span>
+                                <span class="badge bg-dark">JavaScript</span>
+                                <span class="badge bg-dark">HTML5/CSS3</span>
                             </div>
-                            <div class="d-flex gap-2">
-                                <a href="#" class="btn btn-sm btn-outline-accent">GitHub</a>
-                                <a href="#" class="btn btn-sm btn-accent">Demo</a>
-                            </div>
+                            <a href="https://github.com/ignaciotrujilloleiva/Proyecto-Modulo-2-Alke-Wallet"
+                                class="btn btn-sm btn-outline-accent w-100" target="_blank">Ver Repositorio</a>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="p-4">
+                            <i class="bi bi-people-fill text-accent h1"></i>
+                            <h5 class="mt-3">Gestor Inteligente GIC</h5>
+                            <p class="small text-secondary">Proyecto Módulo 4: Sistema de administración de clientes y
+                                lógica de flujos.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-dark">Python</span>
+                                <span class="badge bg-dark">Lógica Negocio</span>
+                            </div>
+                            <a href="https://github.com/ignaciotrujilloleiva/Proyecto-Modulo-4-Gestor-Inteligente-de-clientes-GIC"
+                                class="btn btn-sm btn-outline-accent w-100" target="_blank">Ver Repositorio</a>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="p-4">
+                            <i class="bi bi-database-fill-gear text-accent h1"></i>
+                            <h5 class="mt-3">Django Integración DB</h5>
+                            <p class="small text-secondary">Proyecto Módulo 7: Desarrollo web avanzado con integración
+                                de base de datos.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-dark">Django</span>
+                                <span class="badge bg-dark">Python</span>
+                                <span class="badge bg-dark">SQL</span>
+                            </div>
+                            <a href="https://github.com/ignaciotrujilloleiva/Proyecto-Modulo-7-Desarrollo-web-Django-Integraci-n-Base-de-datos"
+                                class="btn btn-sm btn-outline-accent w-100" target="_blank">Ver Repositorio</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <section id="contacto" class="section-padding bg-darker">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center" data-aos="fade-up">
-                    <h2 class="section-title mx-auto">Hablemos</h2>
-                    <p class="mb-5">¿Tienes un proyecto en mente? ¡Escríbeme!</p>
-                    <form class="contact-form text-start">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control bg-dark border-secondary text-white" placeholder="Nombre">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control bg-dark border-secondary text-white" placeholder="Email">
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control bg-dark border-secondary text-white" rows="4" placeholder="Mensaje"></textarea>
-                            </div>
-                            <div class="col-12 text-center mt-4">
-                                <button type="button" class="btn btn-primary px-5">Enviar Mensaje</button>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8" data-aos="fade-up">
+
+                    <h2 class="section-title mx-auto">Contacto</h2>
+                    <p class="mb-5 text-secondary">
+                        ¿Te interesa trabajar conmigo o quieres conversar sobre un proyecto?
+                        Puedes contactarme directamente a través de los siguientes medios:
+                    </p>
+
+                    <div class="about-card p-4 text-start">
+
+                        <!-- Email -->
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="bi bi-envelope-fill text-accent h4 me-3"></i>
+                            <div>
+                                <h6 class="mb-1">Email</h6>
+                                <p class="m-0 text-secondary">Ignacio.TrujilloLeiva@gmail.com</p>
                             </div>
                         </div>
-                    </form>
+
+                        <!-- GitHub -->
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="bi bi-github text-accent h4 me-3"></i>
+                            <div>
+                                <h6 class="mb-1">GitHub</h6>
+                                <a href="https://github.com/ignaciotrujilloleiva" target="_blank"
+                                    class="text-secondary">
+                                    github.com/ignaciotrujilloleiva
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- LinkedIn -->
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="bi bi-linkedin h4 me-3" style="color:#0A66C2;"></i>
+                            <div>
+                                <h6 class="mb-1">LinkedIn</h6>
+                                <a href="https://www.linkedin.com/in/ignacio-trujillo-leiva-3ab601369/" target="_blank"
+                                    class="text-secondary">
+                                    Ver perfil profesional
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- WhatsApp -->
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-whatsapp h4 me-3" style="color:#25D366;"></i>
+                            <div>
+                                <h6 class="mb-1">WhatsApp</h6>
+                                <a href="https://wa.me/56985663121?text=Hola%20Ignacio,%20vi%20tu%20portafolio%20y%20me%20gustaría%20contactarte"
+                                    target="_blank" class="text-secondary">
+                                    Enviar mensaje directo
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-4 text-center border-top border-secondary">
+    <footer class="py-5 text-center border-top border-secondary bg-darker">
         <div class="container">
             <div class="d-flex justify-content-center gap-4 h4 mb-3">
-                <a href="#" class="text-white hover-accent"><i class="bi bi-github"></i></a>
-                <a href="#" class="text-white hover-accent"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/ignaciotrujilloleiva" target="_blank" class="text-white hover-accent">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ignacio-trujillo-leiva-3ab601369/" target="_blank"
+                    class="text-white hover-accent">
+                    <i class="bi bi-linkedin"></i>
+                </a>
             </div>
-            <p class="m-0 text-secondary small">&copy; 2026 Desarrollado por Ignacio Trujillo. Casi todos los derechos reservados.</p>
+            <p class="m-0 text-secondary small">&copy; 2026 Desarrollado por Ignacio Trujillo Leiva. Todos los derechos
+                reservados.</p>
         </div>
     </footer>
 
@@ -177,4 +289,5 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
