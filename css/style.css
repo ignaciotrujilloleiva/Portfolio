@@ -1,3 +1,4 @@
+/* Variables de Entorno */
 :root {
     --bg-main: #0f172a;
     --bg-darker: #0b1120;
@@ -6,6 +7,7 @@
     --text-muted: #94a3b8;
 }
 
+/* Base */
 body {
     background-color: var(--bg-main);
     color: var(--text-light);
@@ -13,7 +15,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Navbar */
+/* Navbar con Efecto Glassmorphism */
 .navbar {
     background-color: rgba(15, 23, 42, 0.9);
     backdrop-filter: blur(10px);
@@ -22,14 +24,16 @@ body {
 }
 
 .navbar-brand span { color: var(--accent); }
+
 .nav-link {
     color: var(--text-light) !important;
     margin-left: 1.5rem;
     font-weight: 500;
 }
+
 .nav-link:hover { color: var(--accent) !important; }
 
-/* Hero */
+/* Hero Section */
 .hero-section {
     min-height: 100vh;
     padding-top: 80px;
@@ -42,9 +46,13 @@ body {
     border: none;
 }
 
-/* Cards & Sections */
+/* Estructura de Secciones */
 .section-padding { padding: 100px 0; }
 .bg-darker { background-color: var(--bg-darker); }
+
+section {
+    scroll-margin-top: 100px;
+}
 
 .section-title {
     width: fit-content;
@@ -53,30 +61,126 @@ body {
     border-bottom: 4px solid var(--accent);
 }
 
+/* Cards de Proyectos y Skills */
 .skill-card, .about-card, .project-card {
     background-color: rgba(30, 41, 59, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.skill-card:hover, .project-card:hover {
+/* Sistema de Alineación de Cards (Flexbox) */
+.project-card { 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Permite que todas las cards en la fila midan lo mismo */
+}
+
+.project-card:hover {
     transform: translateY(-10px);
     border-color: var(--accent);
 }
 
-.project-card { overflow: hidden; }
+/* Contenedor de contenido de la Card */
+.project-card .p-4 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Este es el "resorte" que empuja el botón al fondo */
+}
 
-/* Contact */
+/* Media e Imágenes Uniformes */
+.project-media {
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Unificación de tamaño para imágenes y carrusel */
+.project-img, 
+.carousel-inner, 
+.carousel-item, 
+.carousel-item img {
+    width: 100%;
+    height: 250px; /* Altura estandarizada para todas las capturas */
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Efecto Zoom en Hover */
+.project-media:hover .project-img {
+    transform: scale(1.05);
+}
+
+.project-img {
+    transition: transform 0.5s ease;
+}
+
+/* Badges y Etiquetas */
+.badge.bg-dark {
+    background-color: rgba(15, 23, 42, 0.8) !important;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    color: var(--text-light); /* Mejor contraste */
+    padding: 5px 10px;
+}
+
+/* Medalla del Proyecto Principal con Degradado */
+.badge-degradado {
+    background-image: linear-gradient(45deg, #007bff, #a300cc);
+    color: white; 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    width: fit-content;
+}
+
+/* Medalla del Proyectos 2 y 3 */
+.bg-secondary {
+    background-image: linear-gradient(45deg, #3773b4, #0d0548);
+    color: white; 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    width: fit-content;
+}
+
+/* Caso de Estudio (Módulo 8) */
+.study-title {
+    padding: 120px 0 60px;
+    background: linear-gradient(180deg, var(--bg-darker) 0%, var(--bg-main) 100%);
+}
+
+.tech-tag {
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.case-card {
+    background: var(--bg-darker);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Formularios de Contacto */
+.form-control {
+    background-color: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
 .form-control:focus {
     background-color: #1e293b;
     border-color: var(--accent);
+    color: white;
     box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
 }
 
+/* Utilidades Extras */
 .hover-accent:hover { color: var(--accent) !important; }
 
-/* Estilos para Dropdown */
 .dropdown-menu {
     background-color: var(--bg-darker);
     border: 1px solid rgba(59, 130, 246, 0.2);
@@ -93,31 +197,6 @@ body {
     color: white;
 }
 
-/* Badge de proyecto personalizado */
-.badge.bg-dark {
-    background-color: rgba(30, 41, 59, 0.8) !important;
-    border: 1px solid rgba(255,255,255,0.1);
-    color: var(--text-muted);
+.carousel-item img {
+    user-select: none;
 }
-
-/* Modulo 8 */
-
-.study-title {
-            padding: 120px 0 60px;
-            background: linear-gradient(180deg, var(--bg-darker) 0%, var(--bg-main) 100%);
-        }
-
-        .tech-tag {
-            background: rgba(59, 130, 246, 0.1);
-            border: 1px solid var(--accent);
-            color: var(--accent);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-        }
-
-        .case-card {
-            background: var(--bg-darker);
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }

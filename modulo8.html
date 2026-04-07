@@ -17,12 +17,37 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm" id="mainNav">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">IGNACIO<span>.DEV</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Volver al Inicio</a></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#investigacion">Empresa</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#caso-estudio">Caso de Estudio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos-portafolio">Proyectos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#foda">FODA</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Volver</a>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -37,15 +62,19 @@
     </header>
 
     <!-- 1. Investigación de Empresa -->
-    <section class="section-padding">
+    <section id="investigacion" class="section-padding">
         <div class="container">
             <h2 class="section-title">1. Investigación de Empresa</h2>
 
             <div class="about-card p-4 mb-4">
-                <h4>Empresa seleccionada: <span class="text-accent">Mercado Libre</span></h4>
+                <h4>Empresa seleccionada: <span class="text-accent">Google</span></h4>
                 <p class="text-secondary">
-                    Elegí esta empresa por su impacto en Latinoamérica, su cultura tecnológica y su enfoque en
-                    escalabilidad.
+                    Elegí esta empresa porque para mi representa el escenario máximo para aplicar mi rigurosidad de
+                    ingeniería en la organización que define los estándares globales de innovación. Más allá de su
+                    prestigio, me motiva su ecosistema de aprendizaje continuo y escalabilidad, donde puedo transformar
+                    mi experiencia en el diagnóstico de sistemas físicos hacia el desarrollo de soluciones digitales de
+                    alto impacto. Busco un entorno que desafíe mi lógica de resolución de problemas y me permita
+                    evolucionar junto a los mejores talentos en infraestructura y software del mundo.
                 </p>
             </div>
 
@@ -61,35 +90,50 @@
                     <tbody>
                         <tr>
                             <td>Valores y propósito</td>
-                            <td>Enfoque en democratizar el comercio y la tecnología en la región.</td>
+                            <td>Google se enfoca en organizar la información del mundo y hacerla universalmente
+                                accesible y útil. Este propósito se alinea con el desarrollo de soluciones tecnológicas
+                                escalables y centradas en el usuario, lo cual me resulta altamente motivador desde una
+                                perspectiva técnica y profesional.</td>
                         </tr>
                         <tr>
-                            <td>Productos</td>
-                            <td>Plataformas de e-commerce y fintech de alto impacto.</td>
+                            <td>Tipo de productos</td>
+                            <td>La empresa desarrolla productos digitales de alto impacto global, incluyendo motores de
+                                búsqueda, plataformas en la nube, herramientas de productividad y aplicaciones móviles,
+                                lo que permite trabajar en sistemas complejos y de gran escala.</td>
                         </tr>
                         <tr>
-                            <td>Tecnologías</td>
-                            <td>Uso de arquitecturas escalables, microservicios y cloud.</td>
+                            <td>Tecnologías que utilizan</td>
+                            <td>Google emplea tecnologías avanzadas como Python, Java, C++, sistemas distribuidos,
+                                inteligencia artificial y herramientas cloud, lo que representa un entorno ideal para el
+                                crecimiento técnico continuo.</td>
                         </tr>
                         <tr>
-                            <td>Metodologías</td>
-                            <td>Trabajo ágil con equipos multidisciplinarios.</td>
+                            <td>Metodologías de trabajo</td>
+                            <td>Se caracteriza por el uso de metodologías ágiles, trabajo colaborativo y enfoque en la
+                                mejora continua, fomentando entornos donde la innovación y la eficiencia son
+                                prioritarias.</td>
                         </tr>
                         <tr>
-                            <td>Innovación</td>
-                            <td>Constante evolución en pagos digitales y logística.</td>
+                            <td>Enfoque en innovación</td>
+                            <td>Google lidera constantemente la innovación tecnológica a través del desarrollo de
+                                inteligencia artificial, machine learning y soluciones escalables, lo que la posiciona
+                                como una de las empresas más influyentes del sector tecnológico.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <!-- Aportes que puedo entregar -->
+            <!-- Formas en las que aportaría valor -->
             <div class="about-card p-4 mt-4">
-                <h5>Aportes que puedo entregar</h5>
+                <h5>Formas en las que aportaría valor</h5>
                 <ul class="text-secondary">
-                    <li>Desarrollo backend con Django y manejo de bases de datos.</li>
-                    <li>Capacidad de resolver problemas lógicos y estructurar sistemas.</li>
-                    <li>Adaptabilidad y aprendizaje continuo en nuevas tecnologías.</li>
+                    <li>Aporto una perspectiva de ingeniería multidisciplinaria que me permite abordar problemas de
+                        software de forma estructurada, aplicando análisis de sistemas y diseñando soluciones robustas
+                        orientadas a la eficiencia y fiabilidad.</li>
+                    <li>Me encuentro en constante formación, lo que me permite adaptarme rápidamente a nuevas
+                        tecnologías y herramientas utilizadas por la organización.</li>
+                    <li>He desarrollado habilidades para analizar problemas técnicos y proponer soluciones eficientes,
+                        especialmente en el desarrollo de lógica de negocio en aplicaciones web.</li>
                 </ul>
             </div>
 
@@ -97,9 +141,11 @@
             <div class="about-card p-4 mt-4">
                 <h5>Preguntas al reclutador</h5>
                 <ul class="text-secondary">
-                    <li>¿Qué tecnologías utilizan actualmente en backend?</li>
-                    <li>¿Cómo es el proceso de crecimiento profesional dentro del equipo?</li>
-                    <li>¿Qué desafíos técnicos enfrenta actualmente el área?</li>
+                    <li>¿Cómo es el proceso de integración para desarrolladores junior dentro del equipo técnico?</li>
+                    <li>¿Qué tipo de desafíos técnicos enfrenta actualmente el equipo en el que se integraría esta
+                        posición?</li>
+                    <li>¿Qué oportunidades existen para el aprendizaje continuo y la especialización en nuevas
+                        tecnologías dentro de la empresa?</li>
                 </ul>
             </div>
 
@@ -107,18 +153,17 @@
     </section>
 
     <!-- 2. Caso de Estudio -->
-    <section class="section-padding bg-darker">
+    <section id="caso-estudio" class="section-padding bg-darker">
         <div class="container">
             <h2 class="section-title">2. Caso de Estudio</h2>
             <!-- Titulo caso de estudio -->
             <section class="study-title text-center">
                 <div class="container">
-                    <h1 class="display-4 fw-bold">Caso de Estudio: <span class="text-accent">CRUD Django con Integración
-                            DataBase</span></h1>
-                    <p class="lead text-secondary">Integración de Django y Gestión de Datos en el sector Sanitario</p>
+                    <h1 class="display-4 fw-bold">Caso de Estudio: <span class="text-accent">Alke Wallet</span></h1>
+                    <p class="lead text-secondary">Aplicación web desarrollada con el Framework Django</p>
                 </div>
             </section>
-            
+
 
             <section class="container py-5">
                 <div class="row g-5">
@@ -129,14 +174,11 @@
                                 <i class="bi bi-info-circle me-2"></i>Descripción del Proyecto
                             </h3>
                             <p>
-                                Este proyecto corresponde al desarrollo de una aplicación web utilizando
-                                <strong>Django</strong>, como parte del Módulo 7 del bootcamp Fullstack Python.
-                            </p>
-                            <p>
-                                El objetivo fue construir una plataforma funcional capaz de gestionar información
-                                mediante una <strong>base de datos relacional</strong>, implementando operaciones CRUD
-                                completas
-                                y siguiendo el patrón arquitectónico <strong>MVT (Model - View - Template)</strong>.
+                                El proyecto Alke Wallet es una aplicación web desarrollada en Django para la gestión
+                                de usuarios y transacciones financieras básicas. Implementa una arquitectura MVT y
+                                una base de datos relacional para garantizar la correcta persistencia de la información.
+                                El enfoque principal fue construir un sistema funcional y bien estructurado, priorizando
+                                la lógica de negocio y la integración entre backend y frontend.
                             </p>
                         </section>
                         <!-- El Desafío -->
@@ -145,12 +187,16 @@
                                 <i class="bi bi-trophy me-2"></i>El Desafío
                             </h3>
                             <p>
-                                El principal desafío fue trasladar la lógica de negocio a una aplicación web
-                                estructurada,
-                                integrando correctamente:
+                                El principal desafío del proyecto fue implementar correctamente la integración entre el
+                                backend y la base de datos, utilizando el ORM de Django para modelar entidades
+                                relacionadas y asegurar la persistencia de la información.
+                            </p>
+                            <p>
+                                Esto implicó comprender y aplicar:
                             </p>
                             <ul class="text-secondary">
-                                <li>Definición de modelos y relaciones en <code>models.py</code>.</li>
+                                <li>Entendimiento de la estructura de un proyecto creado con Django.</li>
+                                <li>Definición de modelos y relaciones.</li>
                                 <li>Persistencia de datos mediante el ORM de Django.</li>
                                 <li>Separación clara entre lógica, presentación y datos.</li>
                                 <li>Renderizado dinámico de información en templates.</li>
@@ -163,23 +209,39 @@
                             </h3>
 
                             <div class="case-card p-4 mb-4">
-                                <p class="mb-3">Se desarrolló una arquitectura basada en buenas prácticas de Django:</p>
+                                <p class="mb-3">
+                                    Se desarrolló una aplicación web desde cero utilizando Django, donde se definieron
+                                    tres modelos principales:
+                                    Usuario, Moneda y Transacción, conectados mediante relaciones de tipo ForeignKey,
+                                    permitiendo una correcta gestión y persistencia de la información.
+                                </p>
 
                                 <ul class="text-secondary">
                                     <li>
-                                        Diseño de modelos que representan entidades del sistema,
-                                        permitiendo escalabilidad y mantenimiento.
+                                        Diseño de modelos que representan entidades del sistema, permitiendo
+                                        escalabilidad y mantenimiento.
                                     </li>
                                     <li>
-                                        Implementación de vistas para manejar la lógica de negocio
-                                        y conectar el backend con el frontend.
+                                        Implementación de relaciones uno a muchos (1:N) mediante claves foráneas.
                                     </li>
                                     <li>
-                                        Uso de <strong>Django Template Language</strong> para renderizar datos
-                                        dinámicos.
+                                        Uso de <strong>Django Template Language</strong> para renderizar datos dinámicos
+                                        en la interfaz.
                                     </li>
                                     <li>
-                                        Integración de formularios y validaciones básicas.
+                                        Integración de formularios para la creación y edición de registros.
+                                    </li>
+                                    <li>
+                                        Uso de <strong>choices</strong> para restringir valores en tipos de transacción,
+                                        evitando errores de ingreso.
+                                    </li>
+                                    <li>
+                                        Implementación de <strong>related_name</strong> para facilitar consultas
+                                        inversas en el ORM.
+                                    </li>
+                                    <li>
+                                        Definición de métodos <strong>__str__</strong> para mejorar la legibilidad en el
+                                        panel administrativo.
                                     </li>
                                     <li>
                                         Uso del panel de administración de Django para gestión eficiente de datos.
@@ -208,7 +270,7 @@
                                 <i class="bi bi-tools me-2"></i>Herramientas Utilizadas
                             </h3>
                             <p class="text-secondary">
-                                Python, Django, SQLite, HTML, CSS, Bootstrap 5, ORM.
+                                Python, Django, SQLite, HTML, CSS, Bootstrap 5, ORM, Visual Studio Code, Github.
                             </p>
                         </section>
 
@@ -217,36 +279,55 @@
                             <h3 class="text-accent mb-4">
                                 <i class="bi bi-mortarboard me-2"></i>Aprendizajes Clave
                             </h3>
-                            <ul class="text-secondary">
-                                <li>Modelado de bases de datos relacionales.</li>
-                                <li>Uso eficiente del ORM de Django.</li>
-                                <li>Integración backend + frontend.</li>
-                                <li>Estructuración de proyectos web.</li>
-                            </ul>
-                        </section>
 
+                            <p>Durante el desarrollo del proyecto se lograron consolidar conocimientos clave como:</p>
+
+                            <ul class="text-secondary">
+                                <li>Uso del ORM de Django para modelar y gestionar datos.</li>
+                                <li>Implementación de relaciones entre entidades en bases de datos relacionales.</li>
+                                <li>Gestión de migraciones y sincronización con la base de datos.</li>
+                                <li>Desarrollo de operaciones CRUD completas.</li>
+                                <li>Integración entre backend y frontend mediante templates.</li>
+                                <li>Uso de <strong>choices</strong> para asegurar consistencia en los datos ingresados.
+                                </li>
+                                <li>Aplicación de <strong>related_name</strong> para optimizar consultas entre modelos.
+                                </li>
+                                <li>Mejora en la legibilidad del sistema mediante métodos <strong>__str__</strong>.</li>
+                            </ul>
+
+                            <p>
+                                Además, se adquirió una comprensión más completa del flujo de una aplicación web, desde
+                                la definición de modelos
+                                hasta la visualización de datos en la interfaz de usuario.
+                            </p>
+                        </section>
                         <!-- Métricas de Impacto -->
                         <section class="mb-5">
                             <h3 class="text-accent mb-4">
                                 <i class="bi bi-graph-up me-2"></i>Métricas de Impacto
                             </h3>
                             <ul class="text-secondary">
-                                <li>Aplicación funcional con CRUD completo.</li>
-                                <li>Integración completa entre backend y base de datos.</li>
-                                <li>Proyecto desarrollado en tiempo acotado (bootcamp).</li>
+                                <li>Implementación de 3 modelos relacionados en base de datos</li>
+                                <li>Desarrollo de CRUD completos para 2 entidades principales</li>
+                                <li>Reducción de errores de ingreso mediante uso de choices</li>
+                                <li>Optimización de consultas gracias a related_name</li>
+                                <li>Tiempo de desarrollo optimizado mediante uso del ORM y Django Admin</li>
                             </ul>
                         </section>
 
-                        <!-- Habilidades Aplicadas -->
+                        <!-- Habilidades técnicas aplicadas -->
                         <section class="mb-5">
                             <h3 class="text-accent mb-4">
-                                <i class="bi bi-code-slash me-2"></i>Habilidades Aplicadas
+                                <i class="bi bi-code-slash me-2"></i>Habilidades técnicas aplicadas
                             </h3>
                             <ul class="text-secondary">
-                                <li>Desarrollo backend con Django.</li>
-                                <li>Lógica de negocio.</li>
-                                <li>Gestión de base de datos.</li>
-                                <li>Arquitectura MVT.</li>
+                                <li>Modelado de bases de datos relacionales</li>
+                                <li>Uso de Django ORM</li>
+                                <li>Desarrollo backend con Python</li>
+                                <li>Desarrollo de vistas en Django</li>
+                                <li>Manejo de rutas y URLs</li>
+                                <li>Desarrollo de interfaces con HTML, CSS y Bootstrap</li>
+                                <li>Control de versiones con Git y GitHub</li>
                             </ul>
                         </section>
 
@@ -256,10 +337,17 @@
                                 <i class="bi bi-star me-2"></i>Justificación del Proyecto
                             </h3>
                             <p>
-                                Este proyecto fue seleccionado como caso de estudio porque representa un punto clave
-                                en mi desarrollo como programador, donde logré integrar backend, base de datos y
-                                frontend
-                                en una aplicación funcional completa.
+                                Este proyecto fue seleccionado como caso de estudio porque representa un punto clave en
+                                mi formación, donde logré integrar por primera vez una aplicación web completa conectada
+                                a una base de datos.
+
+                                A diferencia de proyectos anteriores, este desarrollo implicó trabajar con persistencia
+                                de datos, relaciones entre entidades y lógica backend más compleja, lo que marcó un
+                                avance significativo en mis habilidades técnicas.
+
+                                Además, el proyecto refleja buenas prácticas de desarrollo y una estructura organizada,
+                                lo que lo convierte en un ejemplo representativo de mi nivel actual como desarrollador
+                                en formación.
                             </p>
                         </section>
 
@@ -271,20 +359,22 @@
 
                             <h5 class="mb-4">Tecnologías Clave</h5>
                             <div class="d-flex flex-wrap gap-2 mb-5">
-                                <span class="tech-tag">Django</span>
                                 <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
                                 <span class="tech-tag">SQLite</span>
                                 <span class="tech-tag">HTML</span>
                                 <span class="tech-tag">CSS</span>
                                 <span class="tech-tag">Bootstrap 5</span>
                                 <span class="tech-tag">ORM</span>
+                                <span class="tech-tag">Visual Studio Code</span>
+                                <span class="tech-tag">GitHub</span>
                             </div>
 
                             <h5 class="mb-3">Resultados Obtenidos</h5>
                             <ul class="list-unstyled small text-secondary">
                                 <li class="mb-2">
                                     <i class="bi bi-check2-circle text-accent me-2"></i>
-                                    Aplicación web completamente funcional con Django.
+                                    Aplicación web funcional con Django.
                                 </li>
                                 <li class="mb-2">
                                     <i class="bi bi-check2-circle text-accent me-2"></i>
@@ -307,39 +397,154 @@
     </section>
 
     <!-- Proyectos del Portafolio -->
-    <section class="section-padding">
+    <section id="proyectos-portafolio" class="section-padding">
         <div class="container">
             <h2 class="section-title">Proyectos del Portafolio</h2>
 
             <div class="row g-4">
 
-                <div class="col-md-4">
-                    <div class="project-card p-4">
-                        <h5>Alke Wallet</h5>
-                        <p class="text-secondary">Aplicación financiera con frontend dinámico.</p>
+                <!-- Proyecto 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="project-card h-100">
+
+                        <div class="project-media">
+
+                            <!-- Carrusel -->
+                            <div id="carouselAlke" class="carousel slide" data-bs-ride="carousel"
+                                data-bs-interval="3500" data-bs-pause="hover">
+
+                                <div class="carousel-inner">
+
+                                    <div class="carousel-item active">
+                                        <img src="assets/img/alke1.png" class="d-block w-100 project-img"
+                                            alt="Alke Wallet vista 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/img/alke2.png" class="d-block w-100 project-img"
+                                            alt="Alke Wallet vista 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/img/alke3.png" class="d-block w-100 project-img"
+                                            alt="Alke Wallet vista 3">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/img/alke4.png" class="d-block w-100 project-img"
+                                            alt="Alke Wallet vista 4">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/img/alke5.png" class="d-block w-100 project-img"
+                                            alt="Alke Wallet vista 5">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/img/alke6.png" class="d-block w-100 project-img"
+                                            alt="Alke Wallet vista 6">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-4 d-flex flex-column">
+                            <span class="badge badge-degradado mb-2">Proyecto Principal</span>
+                            <h5>Alke Wallet</h5>
+
+                            <p class="small text-secondary">
+                                Aplicación web desarrollada con Django para la gestión de usuarios y transacciones
+                                financieras, implementando relaciones entre modelos, lógica de negocio y operaciones
+                                CRUD completas mediante el ORM, integrando persistencia de datos y capa de presentación
+                                en una arquitectura MVT.
+                            </p>
+
+                            <div class="mb-3">
+                                <span class="badge bg-dark">Django</span>
+                                <span class="badge bg-dark">Python</span>
+                                <span class="badge bg-dark">SQLite</span>
+                                <span class="badge bg-dark">CRUD</span>
+                                <span class="badge bg-dark">ORM</span>
+                            </div>
+
+                            <a href="https://github.com/ignaciotrujilloleiva/Proyecto-Modulo-7-Desarrollo-web-Django-Integraci-n-Base-de-datos"
+                                target="_blank" class="btn btn-outline-light mt-auto">
+                                <i class="bi bi-github me-2"></i>Ver repositorio
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="project-card p-4">
-                        <h5>Gestor GIC</h5>
-                        <p class="text-secondary">Sistema en Python para gestión de clientes.</p>
+                <!-- Proyecto 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="project-card h-100">
+
+                        <div class="project-media">
+                            <img src="assets/img/proyecto2.png" class="project-img"
+                                alt="Sistema de clientes en consola">
+                        </div>
+
+                        <div class="p-4 d-flex flex-column">
+                            <span class="badge bg-secondary mb-2">Proyecto Backend</span>
+                            <h5>Sistema de Gestión de Clientes</h5>
+
+                            <p class="small text-secondary">
+                                Sistema de gestión de clientes desarrollado en Python bajo el paradigma de
+                                Programación Orientada a Objetos (POO), que permite administrar información mediante
+                                operaciones CRUD, validaciones avanzadas y persistencia de datos en archivos CSV y TXT.
+                            </p>
+
+                            <div class="mb-3">
+                                <span class="badge bg-dark">Python</span>
+                                <span class="badge bg-dark">POO</span>
+                                <span class="badge bg-dark">CSV/TXT</span>
+                                <span class="badge bg-dark">CRUD</span>
+                            </div>
+
+                            <a href="https://github.com/ignaciotrujilloleiva/Proyecto-Modulo-4-Gestor-Inteligente-de-clientes-GIC.git"
+                                target="_blank" class="btn btn-outline-light mt-auto">
+                                <i class="bi bi-github me-2"></i>Ver repositorio
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="project-card p-4">
-                        <h5>Django DB</h5>
-                        <p class="text-secondary">Aplicación web con integración de base de datos.</p>
+                <!-- Proyecto 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="project-card h-100 d-flex flex-column">
+
+                        <div class="project-media">
+                            <img src="assets/img/proyecto3.png" class="project-img"
+                                alt="Aplicación web Django productos">
+                        </div>
+
+                        <div class="p-4 d-flex flex-column">
+                            <span class="badge bg-secondary mb-2">Proyecto Fundamentos</span>
+                            <h5>Alke Web Base (Django)</h5>
+
+                            <p class="small text-secondary">
+                                Aplicación web desarrollada con Django que implementa arquitectura MVT, permitiendo
+                                la gestión de productos mediante formularios, autenticación de usuarios y conexión
+                                con base de datos relacional.
+                            </p>
+
+                            <div class="mb-3">
+                                <span class="badge bg-dark">Django</span>
+                                <span class="badge bg-dark">Python</span>
+                                <span class="badge bg-dark">Backend</span>
+                                <span class="badge bg-dark">Auth</span>
+                                <span class="badge bg-dark">MVT</span>
+                            </div>
+
+                            <a href="https://github.com/ignaciotrujilloleiva/Proyecto-Modulo-6-Desarrollo-Web-Django.git"
+                                target="_blank" class="btn btn-outline-light mt-auto">
+                                <i class="bi bi-github me-2"></i>Ver repositorio
+                            </a>
+                        </div>
                     </div>
                 </div>
 
             </div>
-        </div>
+        </div> 
     </section>
 
     <!-- Análisis FODA -->
-    <section class="section-padding bg-darker">
+    <section id="foda" class="section-padding bg-darker">
         <div class="container">
             <h2 class="section-title">3. Análisis FODA</h2>
 
@@ -350,11 +555,11 @@
                     <div class="about-card p-4">
                         <h5>Fortalezas</h5>
                         <ul class="text-secondary">
-                            <li>Dominio de Python y Django</li>
-                            <li>Capacidad analítica</li>
-                            <li>Resolución de problemas</li>
-                            <li>Aprendizaje autónomo</li>
-                            <li>Trabajo estructurado</li>
+                            <li>Experiencia en múltiples áreas laborales.</li>
+                            <li>Alta capacidad de adaptación.</li>
+                            <li>Disciplina y constancia profesional.</li>
+                            <li>Enfoque analítico en resolución de problemas.</li>
+                            <li>Aprendizaje autónomo en tecnologías backend.</li>
                         </ul>
                     </div>
                 </div>
@@ -364,11 +569,11 @@
                     <div class="about-card p-4">
                         <h5>Debilidades</h5>
                         <ul class="text-secondary">
-                            <li>Falta de experiencia laboral formal</li>
-                            <li>Mejorar testing</li>
-                            <li>Optimización avanzada</li>
-                            <li>Arquitecturas complejas</li>
-                            <li>Inglés técnico avanzado</li>
+                            <li>Experiencia limitada en el área tecnológica.</li>
+                            <li>Falta de proyectos de gran escala.</li>
+                            <li>Proceso de transición profesional.</li>
+                            <li>Red de contactos en desarrollo.</li>
+                            <li>Profundización en herramientas avanzadas.</li>
                         </ul>
                     </div>
                 </div>
@@ -378,11 +583,11 @@
                     <div class="about-card p-4">
                         <h5>Oportunidades</h5>
                         <ul class="text-secondary">
-                            <li>Alta demanda de desarrolladores</li>
-                            <li>Trabajo remoto</li>
-                            <li>Crecimiento del sector tech</li>
-                            <li>Acceso a formación continua</li>
-                            <li>Comunidades tech activas</li>
+                            <li>Alta demanda de desarrolladores.</li>
+                            <li>Crecimiento del desarrollo web.</li>
+                            <li>Acceso a trabajo remoto.</li>
+                            <li>Valoración de perfiles en transición.</li>
+                            <li>Diferenciación mediante portafolio.</li>
                         </ul>
                     </div>
                 </div>
@@ -392,11 +597,11 @@
                     <div class="about-card p-4">
                         <h5>Amenazas</h5>
                         <ul class="text-secondary">
-                            <li>Alta competencia junior</li>
-                            <li>Evolución constante tecnológica</li>
-                            <li>Exigencias de experiencia</li>
-                            <li>Automatización</li>
-                            <li>Mercado cambiante</li>
+                            <li>Alta competencia en perfiles junior.</li>
+                            <li>Rápida evolución tecnológica.</li>
+                            <li>Preferencia por candidatos con experiencia.</li>
+                            <li>Procesos de selección exigentes.</li>
+                            <li>Alta oferta de perfiles similares.</li>
                         </ul>
                     </div>
                 </div>
@@ -409,6 +614,9 @@
     <footer class="py-4 text-center bg-darker">
         <p class="text-secondary">Ignacio Trujillo | Portafolio Profesional</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
